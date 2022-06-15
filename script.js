@@ -89,6 +89,8 @@ numbersInput.addEventListener("change", handler)
 slideInput.addEventListener("input", handler)
 numberInput.addEventListener("input", handler)
 
+numberInput.value = qLetra
+slideInput.value = qLetra
 
 function handler(event){
     console.log("nome do input: ",event.target.name)
@@ -111,7 +113,6 @@ function handler(event){
         slideInput.value = numberInput.value
         qLetra = numberInput.value
     }
-
 
     gpassword()
    
