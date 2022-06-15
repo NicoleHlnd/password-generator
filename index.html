@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="menuLateral">
+                <p>
+                    Choose your password complexity
+                </p>
+                <div class="inputs">
+                    <div class="input">
+                        <input id="capitalLetter" class="checkbox" type="checkbox" name="capitalLetter"/> 
+                        <label for="capitalLetter">
+                            Capital letter
+                        </label>
+                    </div>
+                    <div class="input">
+                        <input id="lowerCase" class="checkbox" type="checkbox" name="lowerCase"/> 
+                        <label for="lowerCase">
+                            Lower case
+                        </label>
+                    </div>
+                    <div class="input">
+                        <input id="numbers" class="checkbox" type="checkbox" name="numbers"/> 
+                        <label for="numbers">
+                            Numbers
+                        </label>
+                    </div>    
+                    <div class="inputSlideDiv">
+                        <label>
+                            Number of chars
+                        </label>
+                        
+                        <div id="sliderDiv">
+                            <input id="slide" value="0" min="3" max="50"  class="slideInput" type="range" name="slider"/>
+                            <input value="10" id="inputNumber" name="char"/>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+            <div class="center">
+                <h1>
+                    New password
+                </h1>
+                <input id = "password" value="12345"disabled class="password">
+                </input>
+            </div>   
+        </div>
+        <script src="script.js">
+        </script>
+    </body>
+</html>
